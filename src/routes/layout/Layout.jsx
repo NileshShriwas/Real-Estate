@@ -1,10 +1,11 @@
-import HomePage from "../homePage/HomePage";
-import Navbar from "../../components/Navbar/Navbar";
+import { Outlet } from 'react-router-dom';
+import Navbar from '../../components/Navbar/Navbar';
+import "./Layout.scss";
 
 function Layout() {
-    return (
-      <>
-        <div className='layout'>
+  return (
+    <>
+      <div className='layout'>
         <div className='navbar'>
           <Navbar />
         </div>
@@ -12,8 +13,8 @@ function Layout() {
           <Outlet />
         </div>
       </div>
-      </>
-    );
+    </>
+  );
 }
 
 export default Layout;
